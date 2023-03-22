@@ -7,7 +7,7 @@
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
-@import url('./benefits.css');
+@import url('./advantages.css');
 @import url('./unique-components.css');
 @import url('./how-its-made.css');
 @import url('./our-products.css');
@@ -31,22 +31,216 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-
-
   /* ===========================COLORS=========================== */
 
-  --main-background-color: #E2E2E2; /* Body background Color */
-	--color-black: #111111; /* Main text color */
-  --color-black-70: #111111B2; /* Reviews text color */
-	--color-dark-violet: #1e1823; /* Mobile menu + Footer  */
-  --color-input-border:#1111110D; /* Input border color */
-  --color-placeholder: #4040404D; /* Placeholder Text Color */
-	--color-orange: #fd9222;  /* Buttons(+Hover/Focus/) Text, Background */
-  --color-orange-light: #FCF1E0; /* Buttons(+Hover/Focus/) Text */
-	--color-white: #FAFAFA; 
-  --color-white-70:#FFFFFFB2; /* Text */
-  --cross-gradiend: linear-gradient(to bottom, #F16529 0%, #D44528 100%); /* Pop-Up Close Button icon fill */
+  --main-background-color: #e2e2e2; /* Body background Color */
+  --color-black: #111111; /* Main text color */
+  --color-black-70: #111111b2; /* Reviews text color */
+  --color-dark-violet: #1e1823; /* Mobile menu + Footer  */
+  --color-input-border: #1111110d; /* Input border color */
+  --color-placeholder: #4040404d; /* Placeholder Text Color */
+  --color-orange: #fd9222; /* Buttons(+Hover/Focus/) Text, Background */
+  --color-orange-light: #fcf1e0; /* Buttons(+Hover/Focus/) Text */
+  --color-white: #fafafa;
+  --color-white-70: #ffffffb2; /* Text */
+  --cross-gradiend: linear-gradient(
+    to bottom,
+    #f16529 0%,
+    #d44528 100%
+  ); /* Pop-Up Close Button icon fill */
 
-  /* ===========================/COLORS=========================== */ 
+  /* ===========================/COLORS=========================== */
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-black);
+  background-color: (var(--main-background-color));
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: opacity(0);
+}
+/* All section */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* All section, except Subscribe,Footer, (Chocolate is Loved-add padding-bottom) */
+.section {
+  padding-top: 72px;
+}
+/* Section: Unique components, How it’s made, Our products, Top Sellers, Reviews
+Modal: leave a review about our chocolate, Explore our new chocolate first, Buy Now*/
+.subtitle-black {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+/* Section: Unique components, How it’s made, Our products, Top Sellers, Reviews
+Modal: leave a review about our chocolate, Explore our new chocolate first, Buy Now*/
+.subtitle-orange {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+}
+/* Modal: thank you for your feedback!, thank you!  */
+.subtitle-light {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-orange-light);
+}
+/* section: How it’s made, Reviews  */
+.under-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+/* Section: HERO, Top Sellers, Subscribe 
+Modal: leave a review about our chocolate, Explore our new chocolate first, Buy Now*/
+.btn-text-light {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-family: inherit;
+}
+/* Section: Unique components, How it’s made, Top Sellers */
+.text {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* Modal: leave a review about our chocolate, Explore our new chocolate first, Buy Now */
+.placeholder-modal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--color-placeholder);
+}
+/* Modal: leave a review about our chocolate, Explore our new chocolate first, Buy Now */
+.modal-about {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+/* Section: Footer, Header-menu */
+.text-nav {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+/* Modal: thank you for your feedback!, thank you! */
+.text-modal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+/* Section: Subscribe, Footer(address) */
+.text-white {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
 
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  /* All section, except Subscribe,Footer, (Chocolate is Loved-add padding-bottom) */
+  .section {
+    padding-top: 100px;
+  }
+  .btn-text-light {
+    padding: 14px 40px;
+  }
+  /* Add class to button in Top Sellers, Reviews */
+  .btn-tablet {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .subtitle-black {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .subtitle-orange {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .subtitle-light {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .placeholder-modal {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .modal-about {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .text-modal {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  /* All section, except Subscribe,Footer, (Chocolate is Loved-add padding-bottom) */
+  .section {
+    padding-top: 128px;
+  }
 }
