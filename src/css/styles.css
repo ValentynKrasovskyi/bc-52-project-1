@@ -30,4 +30,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+
+  /* ===========================COLORS=========================== */
+
+  --main-background-color: #E2E2E2; /* Body background Color */
+	--color-black: #111111; /* Main text color */
+  --color-black-70: #111111B2; /* Reviews text color */
+	--color-dark-violet: #1e1823; /* Mobile menu + Footer  */
+  --color-input-border:#1111110D; /* Input border color */
+  --color-placeholder: #4040404D; /* Placeholder Text Color */
+	--color-orange: #fd9222;  /* Buttons(+Hover/Focus/) Text, Background */
+  --color-orange-light: #FCF1E0; /* Buttons(+Hover/Focus/) Text */
+	--color-white: #FAFAFA; 
+  --color-white-70:#FFFFFFB2; /* Text */
+  --cross-gradiend: linear-gradient(to bottom, #F16529 0%, #D44528 100%); /* Pop-Up Close Button icon fill */
+
+  /* ===========================/COLORS=========================== */ 
+
 }
