@@ -55,15 +55,14 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
   text-transform: uppercase;
   color: var(--color-orange);
 }
-/* Section - Subscribe,
-Modal: thank you for your feedback!, thank you!  */
-.subtitle-white {
+/* Modal: thank you for your feedback!, thank you!  */
+.subtitle-light {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-orange-light);
 }
 /* section: How it’s made, Reviews  */
 .under-subtitle {
@@ -164,7 +163,7 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
     font-size: 24px;
     line-height: 1.17;
   }
-  .subtitle-white {
+  .subtitle-light {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.17;
