@@ -32,6 +32,7 @@
   background: var(--color-orange);
   border-radius: 100px;
   border: none;
+  transition: color var(--transition), background-color var(--transition);
 }
 .hero-btn-buy:focus,
 .hero-btn-buy:hover {
@@ -43,6 +44,7 @@
   flex-wrap: wrap;
   border: 1px solid var(--color-white);
   border-radius: 100px;
+  transition: color var(--transition), border var(--transition);
 }
 .hero-btn-how:hover,
 .hero-btn-how:focus {
@@ -60,6 +62,7 @@
   letter-spacing: -0.03em;
   color: var(--color-white);
   margin-right: 12px;
+  transition: color var(--transition);
 }
 .hero-btn-scroll {
   display: flex;
@@ -69,11 +72,13 @@
   height: 28px;
   border-radius: 50%;
   background-color: var(--color-white);
+  transition: background-color var(--transition);
 }
 .hero-btn-icon-scroll {
   width: 16px;
   height: 16px;
   fill: var(--color-orange);
+  transition: fill var(--transition);
 }
 .hero-link-scroll:hover .hero-text-scroll,
 .hero-link-scroll:focus .hero-text-scroll {
