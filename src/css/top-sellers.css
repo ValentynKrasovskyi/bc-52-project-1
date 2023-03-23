@@ -45,6 +45,7 @@
 
 @media screen and (min-width: 768px) {
   .cacao-text {
+    padding-top: 32px;
     width: 306px;
   }
   .top-sellers-list {
@@ -55,6 +56,7 @@
   .buy-now-btn {
     margin-left: auto;
     margin-right: 0;
+    margin-top: 32px;
   }
 }
 
@@ -62,8 +64,10 @@
   .buy-now-btn {
     position: absolute;
     margin-left: 608px;
+    margin-top: 32px;
   }
   .cacao-text {
+    padding-top: 32px;
     width: 407px;
     position: absolute;
   }
