@@ -1,1 +1,248 @@
 
+    .mob-tab-hidden {
+        display: none;
+        visibility: hidden;
+    }
+  
+    .header {
+        padding: 20px 0px 14px 0px;
+      }
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }   
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.29;
+        letter-spacing: -0.03em;
+        color: var(--color-black);
+        cursor: pointer;
+    }
+    
+    
+    .logo-first-part {
+        font-style: italic;
+    }
+
+    .logo-icon {
+        width: 21px;
+        height: 21px;
+        margin-left: 6px;
+    }
+    
+    .mob-menu-open {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: stroke;
+        
+    }
+
+
+
+    .mob-menu-icon {
+        stroke: var(--color-black);
+        width: 28px;
+        height: 28px;
+        transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: stroke;
+    }
+    
+    .mob-menu {
+        background-color: var(--color-dark-violet);
+        width: 59%;
+        max-width: 290px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        color: var(--color-white);
+        flex-direction: column;
+        gap: 88px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: opacity;
+    }
+    
+
+
+    .mob-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+        justify-content: center;
+        width: 124px;
+    }
+
+
+
+    .nav-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: var(--color-white);
+        transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--color-orange);
+    }
+    
+    .mob-menu-close {
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: stroke;
+    }
+    
+    .menu-close-icon {
+        display: block;
+        width: 28px;
+        height: 28px;
+        stroke: var(--color-white);
+        transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: stroke;
+    }
+
+    .mob-menu-close:hover .menu-close-icon,
+    .mob-menu-close:focus .menu-close-icon,
+    .mob-menu-open:hover .mob-menu-icon,
+    .mob-menu-open:focus .mob-menu-icon  {
+        stroke: var(--color-orange);
+    }
+
+    
+
+    .social {
+        margin-top: auto;
+        margin-right: auto;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        
+    
+    }
+
+    .social-icons {
+        stroke: var(--color-white);
+        fill: transparent;
+        transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: stroke;
+    }
+
+    .social-link:hover .social-icons,
+    .social-link:focus .social-icons {
+        stroke: var(--color-orange);
+    }
+
+    .insta-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .twitter-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (min-width: 375px) {
+        .logo {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        
+
+        .social-link {
+            width: 24px;
+            height: 24px;
+        }
+
+
+        .social-icons {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        .dt-hidden {
+            display: none;
+            visibility: hidden;
+        }
+
+        .mob-tab-hidden {
+            display: flex;
+            visibility: initial;
+        }
+
+        .header {
+            padding: 28px 0px 36px 0px;
+        }
+
+        .nav-link {
+            color: var(--color-black);
+        }
+
+        .social-icons {
+            stroke: var(--color-black);
+        }
+
+        .nav {
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .social {
+            margin-left: auto;
+            gap: 18px;
+           
+        }
+
+        
+
+       
+        .twitter-icon {
+            margin-left: 0;
+        }
+
+        .logo-wrap {
+            margin-right: 188px;
+        }
+
+
+    }
+    
