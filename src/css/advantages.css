@@ -57,11 +57,14 @@
   .advantages-container {
     width: 1200px;
     display: flex;
+    margin: 0;
     padding: 50px;
   }
   .advantages-list {
     display: flex;
     flex-direction: row;
+    column-gap: 0;
+    row-gap: 0;
     gap: 70px;
   }
   .advantages-item {
