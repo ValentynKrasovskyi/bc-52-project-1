@@ -6,8 +6,6 @@ footer {
   color: var(--color-white);
   background-color: var(--color-dark-violet);
 }
-.container {
-}
 
 .container-header {
   margin-bottom: 32px;
@@ -24,12 +22,8 @@ footer {
 
 .footer-nav {
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: flex-start; */
   margin-bottom: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.footer-contacts {
 }
 
 .footer-contacts p {
@@ -62,8 +56,7 @@ footer {
 .footer-icon {
   stroke: var(--color-white);
 }
-.icon {
-}
+
 .footer-info {
   line-height: 1.14;
   letter-spacing: -0.02em;
