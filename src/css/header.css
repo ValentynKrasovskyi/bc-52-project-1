@@ -42,6 +42,7 @@
         align-items: center;
         justify-content: center;
         background-color: transparent;
+        padding: 0;
         border: none;
         transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,11 +139,16 @@
         stroke: var(--color-orange);
     }
 
-    
-
-    .social {
+    .mob-social {
         margin-top: auto;
         margin-right: auto;
+        display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+    }
+
+    .social {
             display: flex;
             gap: 20px;
             align-items: center;
@@ -195,6 +201,11 @@
             height: 100%;
         }
 
+        .mob-menu-icon {
+            width: 32px;
+            height: 32px;
+        }
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -232,15 +243,17 @@
            
         }
 
-        
-
-       
         .twitter-icon {
             margin-left: 0;
         }
 
         .logo-wrap {
             margin-right: 188px;
+        }
+
+        .logo {
+            font-size: 18px;
+            line-height: 1.11;
         }
 
 
