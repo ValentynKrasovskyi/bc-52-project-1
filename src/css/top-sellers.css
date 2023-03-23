@@ -16,7 +16,7 @@
 }
 
 .buy-now-btn {
-  background: var(#fd9222);
+  background: var(--color-orange);
   border-radius: 100px;
   border: none;
   display: block;
@@ -27,8 +27,8 @@
 
 .buy-now-btn:hover,
 .buy-now-btn:focus {
-  background: var(#fcf1e0);
-  color: var(#fd9222);
+  background: var(--color-orange-light);
+  color: var(--color-orange);
 }
 
 @media screen and (max-width: 374px) {
