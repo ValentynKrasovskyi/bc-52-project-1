@@ -45,6 +45,7 @@
   border: 1px solid var(--color-white);
   border-radius: 100px;
   transition: color var(--transition), border var(--transition);
+  text-align: center;
 }
 .hero-btn-how:hover,
 .hero-btn-how:focus {
