@@ -53,6 +53,8 @@ footer {
 
 .footer-icon {
   stroke: var(--color-white);
+  width: 22px;
+  height: 22px;
 }
 
 .footer-info {
@@ -85,6 +87,11 @@ footer {
 
   .footer-contacts {
     margin-right: 50px;
+  }
+
+  .footer-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .footer-nav {
