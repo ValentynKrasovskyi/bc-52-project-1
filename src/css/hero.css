@@ -1,1 +1,176 @@
-
+.page-hero {
+  padding-bottom: 72px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 395px 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-size: cover;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  margin-bottom: 32px;
+}
+.hero-list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.hero-item-btn:not(:last-child) {
+  margin-right: 12px;
+}
+.hero-btn-buy {
+  background: var(--color-orange);
+  border-radius: 100px;
+  border: none;
+  transition: color var(--transition), background-color var(--transition);
+}
+.hero-btn-buy:focus,
+.hero-btn-buy:hover {
+  color: var(--color-orange);
+  background-color: var(--color-orange-light);
+}
+.hero-btn-how {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--color-white);
+  border-radius: 100px;
+  transition: color var(--transition), border var(--transition);
+}
+.hero-btn-how:hover,
+.hero-btn-how:focus {
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+.hero-link-scroll {
+  display: flex;
+  align-items: center;
+}
+.hero-text-scroll {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  margin-right: 12px;
+  transition: color var(--transition);
+}
+.hero-btn-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  transition: background-color var(--transition);
+}
+.hero-btn-icon-scroll {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-orange);
+  transition: fill var(--transition);
+}
+.hero-link-scroll:hover .hero-text-scroll,
+.hero-link-scroll:focus .hero-text-scroll {
+  color: var(--color-orange);
+}
+.hero-link-scroll:hover .hero-btn-scroll,
+.hero-link-scroll:focus .hero-btn-scroll {
+  background-color: var(--color-orange);
+}
+.hero-link-scroll:hover .hero-btn-icon-scroll,
+.hero-link-scroll:focus .hero-btn-icon-scroll {
+  fill: var(--color-white);
+}
+@media screen and (max-width: 767px) {
+  .hero-container {
+    background-image: url(../img/hero-mobile@1x-min.jpg);
+    max-width: 335px;
+    height: 100%;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-container {
+    background-image: url(../img/hero-mobile@2x-min.jpg);
+    max-width: 335px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-hero {
+    padding-bottom: 50px;
+  }
+  .hero-container {
+    flex-wrap: nowrap;
+    background-image: url(../img/hero-tablet@1x-min.jpg);
+    max-width: 704px;
+    height: 100%;
+    padding: 671px 40px 40px;
+  }
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.21;
+    max-width: 484px;
+  }
+  .hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero-list-btn {
+    margin-bottom: 0;
+  }
+  .hero-link-scroll {
+    margin-left: auto;
+  }
+  .hero-text-scroll {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-right: 14px;
+  }
+  .hero-btn-scroll {
+    width: 38px;
+    height: 38px;
+  }
+  .hero-btn-icon-scroll {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-container {
+    background-image: url(../img/hero-tablet@2x-min.jpg);
+    max-width: 704px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    background-image: url(../img/hero-desktop@1x-min.jpg);
+    max-width: 1136px;
+    height: 100%;
+    padding-top: 381px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-container {
+    background-image: url(../img/hero-desktop@2x-min.jpg);
+    max-width: 1136px;
+    height: 100%;
+  }
+}

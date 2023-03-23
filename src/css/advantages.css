@@ -1,5 +1,10 @@
 .advantages-section {
-  background-color: #1e1823;
+
+
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: var(--color-dark-violet);
+
 }
 .advantages-container {
   width: 100%;
@@ -24,7 +29,7 @@
 .advantages-icon {
 }
 .advantages-subtitle {
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 18px;
 }
 .advantages-text {
