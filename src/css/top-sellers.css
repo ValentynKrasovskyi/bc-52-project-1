@@ -16,7 +16,7 @@
 }
 
 .buy-now-btn {
-  background: #fd9222;
+  background: var(--color-orange);
   border-radius: 100px;
   border: none;
   display: block;
@@ -27,8 +27,8 @@
 
 .buy-now-btn:hover,
 .buy-now-btn:focus {
-  background: #fcf1e0;
-  color: #fd9222;
+  background: var(--color-orange-light);
+  color: var(--color-orange);
 }
 
 @media screen and (max-width: 374px) {
@@ -44,6 +44,7 @@
 }
 
 @media screen and (min-width: 768px) {
+  .title {margin-bottom: 50px;}
   .cacao-text {
     padding-top: 32px;
     width: 306px;
@@ -58,6 +59,7 @@
     margin-right: 0;
     margin-top: 32px;
   }
+  .top-sellers-items {margin-top: 0;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -74,4 +76,5 @@
   .title {
     margin-bottom: 50px;
   }
+  
 }
