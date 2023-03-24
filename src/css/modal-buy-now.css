@@ -6,6 +6,10 @@
   background-color: rgba(46, 47, 66, 0.4);
   display: flex;
   justify-content: center;
+<<<<<<< Updated upstream
+=======
+  overflow: auto;
+>>>>>>> Stashed changes
 }
 .modal-buy-now {
   width: 311px;
@@ -24,8 +28,42 @@
   border: none;
   background-color: var(--main-background-color);
 }
+<<<<<<< Updated upstream
 
 /*! ----------------------TABLET---------------------- */
+=======
+.bynow-list {
+  display: flex;
+  justify-content: center;
+}
+
+.bynow-item-wrap {
+  width: 231px;
+  height: 257px;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  display: none;
+}
+.bynow-item-wrap.primary {
+  display: block;
+}
+.bynow-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bynow-input {
+  width: 263px;
+}
+.bynow-input-label {
+  padding: 0 auto;
+}
+/*! ----------------------TABlET---------------------- */
+>>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     width: 609px;
@@ -36,6 +74,7 @@
     width: 28px;
     height: 28px;
   }
+<<<<<<< Updated upstream
 }
 
 /*! ----------------------DESKTOP---------------------- */
@@ -43,3 +82,17 @@
   .modal-buy-now {
   }
 }
+=======
+  .bynow-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bynow-input {
+    width: 100%;
+  }
+}
+
+/*! ----------------------DESKTOP---------------------- */
+/* @media screen and (min-width: 1200px); */
+>>>>>>> Stashed changes
