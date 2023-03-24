@@ -15,7 +15,7 @@
   max-height: 200px;
   text-align: center;
   background-color: var(--color-white);
-  border: 1px solid var(--color-input-borde);
+  border: 1px solid var(--color-input-border);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
   position: relative;
@@ -58,6 +58,11 @@
 .reviews-button:is(:hover, :focus) {
   background: var(--color-orange);
   color: var(--color-white);
+}
+
+
+.speed {
+  transition: all 250ms linear;
 }
 
 .reviews-table,
