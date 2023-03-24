@@ -107,9 +107,11 @@
     }
 
     .nav-link:hover,
-    .nav-link:focus {
+.nav-link:focus {
         color: var(--color-orange);
     }
+
+    
     
     .mob-menu-close {
         margin-left: auto;
@@ -171,6 +173,10 @@
         stroke: var(--color-orange);
     }
 
+    .social-link:visited .social-icons {
+        stroke: var(--color-white);
+    }
+
     .insta-icon {
         width: 22px;
         height: 22px;
@@ -229,6 +235,10 @@
         }
 
         .social-icons {
+            stroke: var(--color-black);
+        }
+
+        .social-link:visited .social-icons {
             stroke: var(--color-black);
         }
 
