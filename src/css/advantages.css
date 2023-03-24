@@ -3,6 +3,9 @@
 }
 .advantages-container {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   padding: 20px;
 }
 .advantages-list {
@@ -33,6 +36,9 @@
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
+.text-down {
+  padding-bottom: 16px;
+}
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
@@ -46,8 +52,7 @@
   .advantages-list {
     flex-wrap: wrap;
     flex-direction: unset;
-    column-gap: 60px;
-    row-gap: 32px;
+    gap: 32px 60px;
   }
   .advantages-item {
     max-width: 308px;
@@ -61,11 +66,13 @@
   }
   .advantages-list {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     gap: 70px;
   }
   .advantages-item {
     position: relative;
+    max-width: 326px;
   }
   .advantages-item:not(:last-child)::before {
     content: '';

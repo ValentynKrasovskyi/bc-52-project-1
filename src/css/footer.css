@@ -116,3 +116,13 @@ footer {
     margin-right: 24px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer-upper-part {
+    padding-bottom: 58px;
+  }
+
+  .footer-contacts {
+    margin-right: 63px;
+  }
+}
