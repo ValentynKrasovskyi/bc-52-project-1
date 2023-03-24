@@ -128,3 +128,44 @@
     width: 335px;
   }
 }
+
+/* ---------------Tablet------------------------- */
+@media screen and (min-width: 768px) {
+  .unique-components-item {
+    width: 336px;
+  }
+  .subtitle-black {
+    margin-bottom: 28px;
+  }
+  .unique-subtitle {
+    width: 486px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .unique-components-list {
+    gap: 32px;
+    margin-top: 50px;
+  }
+}
+/* ---------------------------Desktop------------ */
+@media screen and (min-width: 1200px) {
+  .img-component {
+    width: 206px;
+  }
+  .subtitle-black {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .subtitle-orange {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .unique-components-item {
+    width: 270px;
+  }
+  .unique-components-list {
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+}
