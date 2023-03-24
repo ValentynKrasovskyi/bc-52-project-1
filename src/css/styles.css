@@ -88,6 +88,9 @@
   --color-orange-light: #fcf1e0; /* Buttons(+Hover/Focus/) Text */
   --color-white: #ffffff;
   --color-white-70: #ffffffb2; /* Text */
+  /* how its made markers */
+  --marker-background: #4c4c4c;
+  --marker-border: #eceded;
   --cross-gradiend: linear-gradient(
     to bottom,
     #f16529 0%,
