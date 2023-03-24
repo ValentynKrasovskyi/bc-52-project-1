@@ -1,4 +1,5 @@
 .product-container {
+  padding-top: 72px;
   max-width: 335px;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@
 .card {
   display: block;
 
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
@@ -75,13 +76,13 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .container {
     width: fit-content;
   }
 
   .product-container {
     max-width: fit-content;
+    padding-top: 100px;
   }
 
   .section-title-conteiner {
@@ -109,6 +110,9 @@
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+  }
+  .product-container {
+    padding-top: 128px;
   }
 
   .section-title-conteiner {
