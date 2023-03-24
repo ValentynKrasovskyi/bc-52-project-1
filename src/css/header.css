@@ -73,6 +73,7 @@
         color: var(--color-white);
         flex-direction: column;
         gap: 88px;
+        z-index: 101;
         padding: 20px;
         align-items: center;
         justify-content: center;
