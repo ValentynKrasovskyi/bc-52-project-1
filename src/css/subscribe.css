@@ -1,0 +1,122 @@
+.container.subscribe-container {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/subcribe-mobile@1x-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 62px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .container.subscribe-container {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe-mobile@2x-min.jpg);
+  }
+}
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe-title {
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 291px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscribe-text {
+  width: 326px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 24px;
+}
+.subscribe-btn {
+  display: block;
+  background-color: var(--color-orange);
+  padding: 12px 28px;
+  border-radius: 100px;
+  border: none;
+  margin: 24px auto 63px;
+}
+/*! ----------------------TABLET---------------------- */
+@media screen and (min-width: 768px) {
+  .container.subscribe-container {
+    padding-top: 72px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe-tablet@1x-min.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .container.subscribe-container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subcribe-tablet@2x-min.jpg);
+    }
+  }
+  .subscribe-title {
+    max-width: 378px;
+  }
+  .subscribe-text {
+    width: 467px;
+  }
+
+  .subscribe-btn.btn-text-light {
+    padding: 14px 40px;
+    border-radius: 100px;
+    margin: 24px auto 72px;
+    width: 172px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+/*! ----------------------DESKTOP---------------------- */
+@media screen and (min-width: 1200px) {
+  .container.subscribe-container {
+    padding-top: 72px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe-desktop@1x-min.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .container.subscribe-container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subcribe-desktop@2x-min.jpg);
+    }
+  }
+  .subscribe-btn.btn-text-light {
+    transition: var(--transition);
+  }
+
+  .subscribe-btn.btn-text-light:hover,
+  .subscribe-btn.btn-text-light:focus {
+    background-color: var(--color-orange-light);
+    color: var(--color-orange);
+  }
+}
