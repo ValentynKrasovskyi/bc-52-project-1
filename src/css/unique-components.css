@@ -7,22 +7,19 @@
 .text {
   text-align: center;
 }
-img {
-  width: 224px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
+.unique-img {
+  padding: 28px;
+  width: 224px;
+  margin: 0 auto;
+}
 .unique-text {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  text-align: left;
-  padding: 224px 179px 28px 28px;
+  margin-top: 25px;
 }
 
 .unique-components-list {
