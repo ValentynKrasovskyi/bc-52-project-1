@@ -1,12 +1,13 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector("[data-buynow-open]"),
-    closeMenuBtn: document.querySelector("[data-buynow-close]"),
+    openBuynowBtn: document.querySelectorAll("[data-buynow-open]"),
+    closeBuynowBtn: document.querySelector("[data-buynow-close]"),
     menu: document.querySelector("[data-buynow]"),
   };
 
-  refs.openMenuBtn.addEventListener("click", togglemenu);
-  refs.closeMenuBtn.addEventListener("click", togglemenu);
+  refs.openBuynowBtn.forEach(btn => {btn.addEventListener("click", togglemenu); })
+    
+  refs.closeBuynowBtn.addEventListener("click", togglemenu);
 
   function togglemenu() {
     refs.menu.classList.toggle("is-hidden");
