@@ -55,6 +55,10 @@
   line-height: 1.22;
   color: var(--color-black);
 }
+.reviews-button:is(:hover, :focus) {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
 
 .reviews-table,
 .reviews-pc {
