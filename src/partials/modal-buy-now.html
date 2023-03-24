@@ -99,6 +99,7 @@
       <label for="user-name" class="bynow-input-label"
         >Personal information</label
       >
+      <div class="personal-wrap">
       <input
         type="text"
         class="bynow-input input name"
@@ -113,6 +114,7 @@
         id="user-surname"
         placeholder="Surname"
       />
+      </div>
       <label for="user-email" class="bynow-input-label">Email</label>
       <input
         type="email"
@@ -121,22 +123,38 @@
         id="user-email"
         placeholder="Email"
       />
-      <label for="user-tel" class="bynow-input-label">phone number</label>
+      <label for="user-tel" class="bynow-input-label">Phone number</label>
+      <div class="input-card-wrap">
       <input
         type="tel"
-        class="bynow-input input"
+        class="bynow-input input tel"
         name="user-tel"
         id="user-tel"
         placeholder="Phone number"
       />
-      <label for="user-card" class="bynow-input-label">card number</label>
+      <div class="number-post">
+      <svg class="prapor">
+        <use href="../images/icons.svg#prapor"></use>
+      </svg>
+      <p class="number-pre">+380</p>
+      </div>
+      </div>
+      <label for="user-card" class="bynow-input-label">Card number</label>
+      <div class="input-card-wrap">
       <input
         type="tel"
         class="bynow-input input"
         name="user-card"
         id="user-card"
-        placeholder="Card number"
+        placeholder="Enter card"
       />
+    <svg class="mastercard">
+      <use href="../images/icons.svg#mastercard"></use>
+    </svg>
+    </div>
+      
+    
+      
       <label for="user-coment" class="bynow-input-label">Comment</label>
       <textarea
         placeholder="Enter text"
