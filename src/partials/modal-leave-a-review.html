@@ -1,10 +1,53 @@
 <div class="backdrop" data-review>
-    <div class="review-modal">
-        <button type="button" class="review-modal-close-btn" data-review-close>
-            <svg class="modal-button-close">
-                <use href="./images/icons.svg#close"></use>
-              </svg>
-        </button>
-         
-    </div>
+  <div class="review-modal">
+    <button type="button" class="review-modal-close-btn" data-review-close>
+      <svg class="modal-button-close">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="subtitle-black">LEAVE A REVIEW ABOUT <span class="subtitle-orange">OUR CHOCOLATE</span></p>
+    <form class="form" name="user-name">
+      <ul class="review-modal-data">
+        <li class="review-modal-from-data">
+          <input
+            type="text"
+            name="name"
+            class="placeholder-modal"
+            id="name"
+            placeholder="Name"
+            autofocus
+          />
+        </li>
+        <li class="review-modal-from-data">
+          <input
+            type="email"
+            name="email"
+            class="placeholder-modal"
+            id="mail"
+            placeholder="Enter your email"
+          />
+        </li>
+        <li class="review-modal-from-data">
+          <input
+            type="tel"
+            name="phone"
+            class=""
+            id="tel"
+            placeholder="Phone number"
+          />
+        </li>
+        <li class="review-modal-from-data">
+          <textarea
+            name="comment"
+            class="comment placeholder-modal"
+            id="comment"
+            placeholder="Enter text"
+          ></textarea>
+        </li>
+      </ul>
+      <div class="send-button-container">
+        <button type="submit" class="send-button btn-text-light">Send</button>
+      </div>
+    </form>
+  </div>
 </div>
