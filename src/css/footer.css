@@ -46,6 +46,7 @@ footer {
 .footer-social {
   margin-left: auto;
 }
+
 .footer-social .list {
   display: flex;
   gap: 14px;
@@ -76,6 +77,7 @@ footer {
     display: flex;
     padding-bottom: 50px;
   }
+
   .container-header {
     font-size: 28px;
     line-height: 1.21;
@@ -96,6 +98,13 @@ footer {
 
   .footer-nav {
     margin-left: auto;
+  }
+
+  .footer-social .list {
+    gap: 18px;
+  }
+  .footer-info {
+    margin-top: 24px;
   }
 
   .footer-info .list {
