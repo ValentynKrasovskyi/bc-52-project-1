@@ -23,6 +23,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  transition: var(--transition);
 }
 
 .buy-now-btn:hover,
