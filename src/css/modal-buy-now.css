@@ -28,10 +28,6 @@
   border: none;
   background-color: var(--main-background-color);
 }
-<<<<<<< Updated upstream
-
-/*! ----------------------TABLET---------------------- */
-=======
 .bynow-list {
   display: flex;
   justify-content: center;
@@ -63,7 +59,6 @@
   padding: 0 auto;
 }
 /*! ----------------------TABlET---------------------- */
->>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     width: 609px;
