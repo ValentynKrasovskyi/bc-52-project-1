@@ -6,10 +6,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   display: flex;
   justify-content: center;
-<<<<<<< Updated upstream
-=======
   overflow: auto;
->>>>>>> Stashed changes
 }
 .modal-buy-now {
   width: 311px;
@@ -20,13 +17,26 @@
   padding: 14px;
 }
 .buy-now-close {
-  display: block;
+  display: flex;
+  text-align: center;
   margin-left: auto;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  padding: 0;
+  background-color: transparent;
   border: none;
-  background-color: var(--main-background-color);
+}
+.buynow-close-icon {
+  width: 100%;
+  height: 100%;
+  stroke: #111;
+  transition: var(--transition);
+}
+.buy-now-close:is(:hover, :focus) .buynow-close-icon {
+  stroke: var(--color-orange);
+}
+.modal-title {
+  margin-bottom: 32px;
 }
 .bynow-list {
   display: flex;
@@ -40,9 +50,25 @@
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   display: none;
+  margin-bottom: 32px;
 }
 .bynow-item-wrap.primary {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 28px 32px;
+  align-items: center;
+}
+.gramm {
+  width: 96px;
+  height: 33px;
+  background-color: var(--main-background-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--color-black);
 }
 .bynow-form {
   display: flex;
@@ -52,11 +78,19 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.bynow-input {
+.bynow-input.input {
   width: 263px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  background-color: var(--main-background-color);
+  margin-bottom: 18px;
+}
+.bynow-input.input.name {
+  margin-bottom: 14px;
 }
 .bynow-input-label {
-  padding: 0 auto;
+  margin-bottom: 8px;
 }
 /*! ----------------------TABlET---------------------- */
 @media screen and (min-width: 768px) {
@@ -69,25 +103,13 @@
     width: 28px;
     height: 28px;
   }
-<<<<<<< Updated upstream
-}
-
-/*! ----------------------DESKTOP---------------------- */
-@media screen and (min-width: 1200px) {
-  .modal-buy-now {
-  }
-}
-=======
-  .bynow-form {
+  .bynow-item-wrap {
     display: flex;
     flex-direction: column;
-    width: 100%;
-  }
-  .bynow-input {
-    width: 100%;
+    padding: 32px 32px 28px 32px;
+    align-items: center;
   }
 }
 
 /*! ----------------------DESKTOP---------------------- */
-/* @media screen and (min-width: 1200px); */
->>>>>>> Stashed changes
+/* @media screen and (min-width: 1200px) */
