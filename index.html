@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/bc-52-project-1/assets/index-12209582.js"></script>
-    <link rel="stylesheet" href="/bc-52-project-1/assets/index-831699c6.css">
+    <link rel="stylesheet" href="/bc-52-project-1/assets/index-a072b26a.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -793,6 +793,8 @@
           name="user-name"
           id="user-name"
           placeholder="Name"
+          pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+          required
         />
         <input
           type="text"
@@ -818,6 +820,8 @@
           name="user-tel"
           id="user-tel"
           placeholder="Phone number"
+          pattern="\d{9}"
+          required
         />
         <div class="number-post">
           <svg class="prapor">
@@ -834,6 +838,8 @@
           name="user-card"
           id="user-card"
           placeholder="Enter card"
+          pattern="[\d ]{16,19}"
+          required
         />
         <svg class="mastercard">
           <use href="/bc-52-project-1/assets/icons-21399646.svg#mastercard"></use>
