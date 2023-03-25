@@ -8,7 +8,7 @@
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
-@import url(./advantages.css);
+@import url('./advantages.css');
 @import url('./unique-components.css');
 @import url('./how-its-made.css');
 @import url('./our-products.css');
@@ -16,7 +16,11 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./modal-buy-now.css');
 @import url('./modal-leave-a-review.css');
+@import url('./modal-thank-you.css');
+@import url('./modal-feedback.css');
+@import url('./modal-explore-new-chocolate.css');
 
 @font-face {
   font-family: Montserrat;
@@ -74,7 +78,7 @@
 
   /* ===========================COLORS=========================== */
 
-  --main-background-color: #fafafa; /* Body background Color */
+  --main-background-color: #e2e2e2; /* Body background Color */
   --color-black: #111111; /* Main text color */
   --color-black-70: #111111b2; /* Reviews text color */
   --color-dark-violet: #1e1823; /* Mobile menu + Footer  */
@@ -84,6 +88,9 @@
   --color-orange-light: #fcf1e0; /* Buttons(+Hover/Focus/) Text */
   --color-white: #ffffff;
   --color-white-70: #ffffffb2; /* Text */
+  /* how its made markers */
+  --marker-background: #4c4c4c;
+  --marker-border: #eceded;
   --cross-gradiend: linear-gradient(
     to bottom,
     #f16529 0%,
@@ -180,7 +187,7 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #ffffff;
+  color: var(--color-white);
   padding: 12px 28px;
   font-family: inherit;
 }
@@ -213,7 +220,7 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 /* Modal: thank you for your feedback!, thank you! */
 .text-modal {
@@ -221,7 +228,7 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 /* Section: Subscribe, Footer(address) */
 .text-white {
@@ -229,7 +236,7 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 375px) {
@@ -294,4 +301,4 @@ Modal: leave a review about our chocolate, Explore our new chocolate first, Buy 
   .section {
     padding-top: 128px;
   }
-}
+} ;

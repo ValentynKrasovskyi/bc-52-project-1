@@ -4,10 +4,34 @@ const menu = document.querySelector('[data-menu]');
 
 menuOpenButton.addEventListener('click', () => {
   menu.classList.remove('is-hidden');
-  menu.classList.remove('no-scroll');
 });
 
 menuCloseButton.addEventListener('click', () => {
   menu.classList.add('is-hidden');
-  menu.classList.add('no-scroll');
 });
+
+const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+
+
+smoothScrollLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    
+    const targetId = link.getAttribute('href');
+
+    const targetSection = document.querySelector(targetId);
+
+    targetSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
