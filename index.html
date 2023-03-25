@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/bc-52-project-1/assets/index-851779f5.js"></script>
-    <link rel="stylesheet" href="/bc-52-project-1/assets/index-e25dfbcb.css">
+    <link rel="stylesheet" href="/bc-52-project-1/assets/index-dde8c099.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -621,8 +621,12 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
+    <button
+      type="button"
+      class="subscribe-btn btn-text-light"
+      data-explore-open
+    >
     <button type="button" class="subscribe-btn btn-text-light" data-buynow-open>
-      Subscribe
     </button>
   </div>
 </section>
@@ -860,7 +864,51 @@
 </div>
 
     
-    
+    <div class="modal-explore-backdrop is-hidden" data-explore>
+  <div class="modal-explore-thumb">
+    <button type="submit" class="modal-close-btn" data-explore-close>
+      <svg class="modal-explore-icon">
+        <use href="/bc-52-project-1/assets/icons-21399646.svg#close"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="/bc-52-project-1/assets/pop-up-chocolate-desktop@1x-min-2672d333.jpg 1x, /bc-52-project-1/assets/pop-up-chocolate-desktop@2x-min-6fd8e088.jpg 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/bc-52-project-1/assets/pop-up-chocolate-desktop@1x-min-2672d333.jpg 1x, /bc-52-project-1/assets/pop-up-chocolate-desktop@2x-min-6fd8e088.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/bc-52-project-1/assets/pop-up-chocolate-mobile@1x-min-57d1b926.jpg 1x, /bc-52-project-1/assets/pop-up-chocolate-mobile@2x-min-5d7bde8d.jpg 2x"
+        media="(min-width: 375px)"
+      />
+
+      <img
+        class="modal-explore-img"
+        src="/bc-52-project-1/assets/pop-up-chocolate-mobile@1x-min-57d1b926.jpg"
+        alt="Dark chocolate bars"
+      />
+    </picture>
+    <div class="modal-explore-meta">
+      <h2 class="subtitle-black">
+        Explore our <br />
+        <span class="subtitle-orange">new chocolate</span> first!
+      </h2>
+      <form class="modal-explore-form">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          class="modal-explore-input"
+        />
+        <button type="submit" class="modal-explore-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
     
   </body>
 </html>
