@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/bc-52-project-1/assets/index-12209582.js"></script>
+    <script type="module" crossorigin src="/bc-52-project-1/assets/index-cf3df94c.js"></script>
     <link rel="stylesheet" href="/bc-52-project-1/assets/index-c331d521.css">
   </head>
   <body>
@@ -549,11 +549,7 @@
           />
           <img class="photo-radius" src="sellers2-mobile@1x-min.jpg" alt="" />
         </picture>
-        <button
-          type="button"
-          class="btn-text-light buy-now-btn"
-          data-buynow-open
-        >
+        <button type="button" class="btn-text-light buy-now-btn" data-buy-open>
           Buy now
         </button>
       </li>
@@ -870,8 +866,10 @@
         <use href="/bc-52-project-1/assets/icons-21399646.svg#close"></use>
       </svg>
     </button>
-    <p class="review-txt-black">leave a review about <span class="review-txt-orange">our chocolate</span></p>
-    <form class="form" name="user-name">
+    <p class="review-txt-black">
+      leave a review about <span class="review-txt-orange">our chocolate</span>
+    </p>
+    <form class="form review-form" name="user-name">
       <ul class="review-modal-data">
         <li class="review-modal-from-data">
           <input
@@ -880,7 +878,6 @@
             class="placeholder-modal review-input"
             id="name"
             placeholder="Name"
-          
           />
         </li>
         <li class="review-modal-from-data">
@@ -919,7 +916,9 @@
         </li>
       </ul>
       <div class="send-button-container">
-        <button type="submit" class="send-button btn-text-light">Send</button>
+        <button type="button" class="send-button btn-text-light submit-review">
+          Send
+        </button>
       </div>
     </form>
   </div>
@@ -946,7 +945,7 @@
   </div>
 </div>
 
-    <div class="modal-feedback is-hidden">
+    <div class="modal-feedback is-hidden" data-feedback>
   <div class="modal-feedback-block">
     <button class="close-feedback-btn" data-feedback-close type="button">
       <svg class="close-feedback-icon" width="28" height="28">
