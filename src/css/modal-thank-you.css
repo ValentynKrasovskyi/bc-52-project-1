@@ -48,8 +48,9 @@
 .thank-close-btn:hover {
   background-color: var(--color-black);
 }
+
 .thank-icon-close {
-  stroke: #f16529;
+  stroke: url(#linear-gradient);
   width: 16px;
   height: 16px;
   transition: stroke var(--transition);
