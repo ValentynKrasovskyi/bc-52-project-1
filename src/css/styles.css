@@ -78,7 +78,7 @@
 
   /* ===========================COLORS=========================== */
 
-  --main-background-color: #fafafa; /* Body background Color */
+  --main-background-color: #e2e2e2; /* Body background Color */
   --color-black: #111111; /* Main text color */
   --color-black-70: #111111b2; /* Reviews text color */
   --color-dark-violet: #1e1823; /* Mobile menu + Footer  */
@@ -88,6 +88,9 @@
   --color-orange-light: #fcf1e0; /* Buttons(+Hover/Focus/) Text */
   --color-white: #ffffff;
   --color-white-70: #ffffffb2; /* Text */
+  /* how its made markers */
+  --marker-background: #4c4c4c;
+  --marker-border: #eceded;
   --cross-gradiend: linear-gradient(
     to bottom,
     #f16529 0%,
