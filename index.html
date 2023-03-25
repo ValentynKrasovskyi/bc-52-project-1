@@ -12,9 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     
     <script type="module" crossorigin src="/bc-52-project-1/assets/index-cf3df94c.js"></script>
-    <link rel="stylesheet" href="/bc-52-project-1/assets/index-19ce7735.css">
+    <link rel="stylesheet" href="/bc-52-project-1/assets/index-37d5dd02.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -32,7 +33,7 @@
       <li class="nav-item">
         <a href="#how-its-made" class="nav-link smooth-scroll">How it&apos;s made?</a>
       </li>
-      <li class="nav-item"><a href="#" class="nav-link smooth-scroll">Our products</a></li>
+      <li class="nav-item"><a href="#our-products" class="nav-link smooth-scroll">Our products</a></li>
       <li class="nav-item"><a href="#top-sellers" class="nav-link smooth-scroll">Top sellers</a></li>
       <li class="nav-item">
         <a href="#reviews" class="nav-link smooth-scroll">Chocolate is loved</a>
@@ -70,7 +71,7 @@
           <a href="#how-its-made" class="nav-link smooth-scroll">How it&apos;s made?</a>
         </li>
         <li class="mob-nav-items">
-          <a href="#" class="nav-link smooth-scroll">Our products</a>
+          <a href="#our-products" class="nav-link smooth-scroll">Our products</a>
         </li>
         <li class="mob-nav-items">
           <a href="#top-sellers" class="nav-link smooth-scroll">Top sellers</a>
@@ -391,10 +392,11 @@
     <div class="section-title-conteiner">
   <h2 class="subtitle-black section-title">OUR <span class="subtitle-orange">PRODUCTS</span></h2>
   </div>
-  <ul class="product-list">
-    <li class="card">
+  <div class="product-list swiper">
+   <div class="swiper-wrapper"> 
+    <div class="card swiper-slide">
       <div class="product-img">
-      <img src="../img/product1-desktop@1x-min.jpg" 
+      <img class="swiper-img" src="../img/product1-desktop@1x-min.jpg" 
       alt="orange"
       srcset="../img/product1-desktop@1x-min.jpg 1x, 
       ../img/product1-desktop@2x-min.jpg 2x"
@@ -406,10 +408,10 @@
       <p class="card-text">Dark chocolate</p>
       <p class="card-price">45 UAH</p>
       </div>
-    </li>
-    <li class="card">
+    </div>
+    <div class="card swiper-slide">
       <div class="product-img">
-      <img src="../img/product2-desktop@1x-min.jpg" 
+      <img class="swiper-img" src="../img/product2-desktop@1x-min.jpg" 
       alt="apple&cranberry"
       srcset="../img/product2-desktop@1x-min.jpg 1x,
       ../img/product2-desktop@2x-min.jpg 2x"
@@ -421,10 +423,10 @@
       <p class="card-text">Milk chocolate</p>
       <p class="card-price">50 UAH</p>
       </div>
-    </li>
-    <li class="card">
+    </div>
+    <div class="card swiper-slide">
       <div class="product-img">
-      <img src="../img/product3-desktop@1x-min.jpg" 
+      <img class="swiper-img" src="../img/product3-desktop@1x-min.jpg" 
       alt="lime&sea salt"
       srcset="../img/product3-desktop@1x-min.jpg 1x,
       ../img/product3-desktop@2x-min.jpg 2x" 
@@ -436,10 +438,10 @@
       <p class="card-text">Dark chocolate</p>
       <p class="card-price">66 UAH</p>
       </div>
-    </li>
-    <li class="card">
+    </div>
+    <div class="card swiper-slide">
       <div class="product-img">
-      <img src="../img/product4-desktop@1x-min.jpg" 
+      <img class="swiper-img" src="../img/product4-desktop@1x-min.jpg" 
       alt="pineapple"
       srcset="../img/product4-desktop@1x-min.jpg 1x,
       ../img/product4-desktop@2x-min.jpg 2x" 
@@ -451,51 +453,42 @@
       <p class="card-text">Dark chocolate</p>
       <p class="card-price">54 UAH</p>
       </div>
-    </li>
-    <!-- <li class="card">
-      <img src="" alt="classic milk"
+    </div>
+    <div class="card swiper-slide">
+      <img class="swiper-img" src="" alt="classic milk"
       width="230"
       height="201">
       <p class="card-title">CLASSIC</p>
       <p class="card-text">Milk chocolate</p>
       <p class="card-price">45 UAH</p>
-    </li>
-    <li class="card">
-      <img src="" alt="honey"
+    </div>
+    <div class="card swiper-slide">
+      <img class="swiper-img" src="" alt="honey"
       width="230"
       height="201">
       <p class="card-title">HONEY</p>
       <p class="card-text">Milk chocolate</p>
       <p class="card-price">50 UAH</p>
-    </li>
-    <li class="card">
-      <img src="" alt="roasted fruits"
+    </div>
+    <div class="card swiper-slide">
+      <img class="swiper-img" src="" alt="roasted fruits"
       width="230"
       height="201">
       <p class="card-title">ROASTED FRUITS</p>
       <p class="card-text">Dark chocolate</p>
       <p class="card-price">66 UAH</p>
-    </li>
-    <li class="card">
-      <img src="" alt="classic white"
+    </div>
+    <div class="card swiper-slide">
+      <img class="swiper-img" src="" alt="classic white"
       width="230"
       height="201">
       <p class="card-title">CLASSICS</p>
       <p class="card-text">White chocolate</p>
       <p class="card-price">54 UAH</p>
-    </li> -->
-  <!-- </ul>
-  <div class="slider">
-  <ul class="slider-list">
-  <li class="btn"></li>
-  <li class="btn"></li>
-  <li class="btn"></li>
-  <li class="btn"></li>
-  <li class="btn"></li>
-  <li class="btn"></li>
-  <li class="btn"></li>
-  <li class="btn"></li>
-  </ul> -->
+    </div>
+  </div>
+  <ul class="swiper-pagination">
+  </ul>
   </div>
   </div>
 </section>
@@ -549,7 +542,9 @@
           />
           <img class="photo-radius" src="sellers2-mobile@1x-min.jpg" alt="" />
         </picture>
+
         <button type="button" class="btn-text-light buy-now-btn" data-buy-open>
+
           Buy now
         </button>
       </li>
@@ -1004,6 +999,41 @@
   </div>
 </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  initialSlide: 0,
+  slidesPerView: 1,
+  loop: true,
+  pagination : {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  }, 
+  
+  autoplay: {
+   delay: 3000,
+ },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 18,
+    },
+    
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18
+    },
+  },
+
+    
+});
+    </script>
     
   </body>
 </html>
