@@ -73,7 +73,7 @@
   display: block;
 }
 
-.slider {
+/* .slider {
   margin-top: 32px;
 }
 
@@ -95,7 +95,7 @@
 .btn:focus {
   width: 28px;
   background: #FD9222;
-}
+} */
 
 
 
@@ -136,9 +136,9 @@
     gap: 18px;
   }
 
-  .slider {
+  /* .slider {
     max-width: 768px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -150,7 +150,7 @@
     max-width: none;
   }
 
-  .slider {
+  /* .slider {
     max-width: 100%;
-  }
+  } */
 }
