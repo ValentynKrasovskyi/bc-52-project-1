@@ -104,7 +104,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--color-black);
-  background-color: (var(--main-background-color));
+  background-color: var(--main-background-color);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;

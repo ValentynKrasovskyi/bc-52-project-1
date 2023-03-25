@@ -8,7 +8,7 @@
 }
 .video {
   min-width: auto;
-  min-height: auto;
+  min-height: 500px;
   margin-bottom: 0;
   border-radius: 15px;
   overflow: hidden;
@@ -60,7 +60,7 @@
   }
   .video {
     min-width: 335px;
-    min-height: 500px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -84,6 +84,10 @@
   .how-made-list-subtitle {
     margin-bottom: 28px;
   }
+  .subtitle-how-made{
+    margin-bottom: 50px;
+  }
+  
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -104,5 +108,8 @@
   .how-made-list {
     width: 446px;
     gap: 24px;
+  }
+  .subtitle-how-made{
+    margin-bottom: 50px;
   }
 }
