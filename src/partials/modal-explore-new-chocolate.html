@@ -1,18 +1,39 @@
-<div class="pop-up">
+<div class="modal-explore-backdrop is-hidden" data-explore>
   <div class="modal-explore-thumb">
-    <button type="button" class="modal-close-btn">
-      <svg class="modal-explore-icon" width="24" height="24">
+    <button type="button" class="modal-close-btn" data-explore-close>
+      <svg class="modal-explore-icon">
         <use href="./images/icons.svg#close"></use>
       </svg>
     </button>
-    <img
-      src="./img/pop-up-chocolate-mobile@1x-min.jpg"
-      srcset="
-        ./img/pop-up-chocolate-mobile@1x-min.jpg 1x,
-        ./img/pop-up-chocolate-mobile@2x-min.jpg 2x
-      "
-      alt="Dark chocolate bars"
-    />
+    <picture>
+      <source
+        srcset="
+          ./img/pop-up-chocolate-desktop@1x-min.jpg 1x,
+          ./img/pop-up-chocolate-desktop@2x-min.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./img/pop-up-chocolate-tablet@1x-min.jpg 1x,
+          ./img/pop-up-chocolate-tablet@2x-min.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/pop-up-chocolate-mobile@1x-min.jpg 1x,
+          ./img/pop-up-chocolate-mobile@2x-min.jpg 2x
+        "
+        media="(min-width: 375px)"
+      />
+
+      <img
+        class="modal-explore-img"
+        src="./img/pop-up-chocolate-mobile@1x-min.jpg"
+        alt="Dark chocolate bars"
+      />
+    </picture>
     <div class="modal-explore-meta">
       <h2 class="subtitle-black">
         Explore our <br />
