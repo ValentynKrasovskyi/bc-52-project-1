@@ -1,0 +1,118 @@
+.thank-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--transition), visibility var(--transition);
+}
+.thank-backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: opacity(0);
+}
+.thank-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 350px;
+  background: var(--color-orange);
+  border-radius: 15px;
+  background-image: url(../img/pop-up-half-choc-mobile@1x-min.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  transform: opacity(100%);
+  transition: transform var(--transition);
+}
+.thank-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-orange-light);
+  padding: 0;
+  transition: background-color var(--transition);
+}
+.thank-close-btn:focus,
+.thank-close-btn:hover {
+  background-color: var(--color-black);
+}
+.thank-icon-close {
+  stroke: #f16529;
+  width: 16px;
+  height: 16px;
+  transition: stroke var(--transition);
+}
+.thank-close-btn:focus .thank-icon-close,
+.thank-close-btn:hover .thank-icon-close {
+  stroke: var(--color-white);
+}
+.thank-block {
+  padding: 84px 24px 170px 68px;
+}
+.thank-title {
+  margin-bottom: 8px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .thank-modal {
+    background-image: url(../img/pop-up-half-choc-mobile@2x-min.png);
+    background-size: 276px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .thank-modal {
+    background-image: url(../img/pop-up-half-choc-tablet@1x-min.png);
+    width: 516px;
+    height: 414px;
+  }
+  .thank-close-btn {
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  .thank-icon-close {
+    width: 22px;
+    height: 22px;
+  }
+  .thank-block {
+    padding: 154px 44px 154px 163px;
+  }
+  .thank-text.text-white {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .thank-modal {
+    background-image: url(../img/pop-up-half-choc-tablet@2x-min.png);
+    background-size: 282px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .thank-modal {
+    background-image: url(../img/pop-up-half-choc-destop@1x-min.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .thank-modal {
+    background-image: url(../img/pop-up-half-choc-destop@2x-min.png);
+  }
+}

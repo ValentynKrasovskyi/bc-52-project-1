@@ -1,0 +1,167 @@
+<div class="backdrop-buy-now is-hidden" data-buynow>
+  <div class="modal-buy-now">
+    <button type="button" class="buy-now-close" data-buynow-close>
+      <svg class="buynow-close-icon">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title subtitle-black">
+      <span class="modal-sub-title subtitle-orange">byu</span> now
+    </h2>
+    <ul class="bynow-list">
+      <li class="bynow-item">
+        <div class="bynow-item-wrap primary">
+          <picture>
+            <source
+              srcset="
+                ./img/buy1-desktop@1x-min.jpg 1x,
+                ./img/buy1-desktop@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/buy1-mobile@1x-min.jpg 1x,
+                ./img/buy1-mobile@2x-min.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./img/buy1-tablet@1x-min.jpg 1x,
+                ./img/buy1-tablet@2x-min.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./img/buy1-mobile@1x-min.jpg" alt="first buy" />
+          </picture>
+          <button type="button" class="gramm">100 g</button>
+        </div>
+      </li>
+      <li>
+        <div class="bynow-item-wrap">
+          <picture>
+            <source
+              srcset="
+                ./img/buy2-desktop@1x-min.jpg 1x,
+                ./img/buy2-desktop@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/buy2-mobile@1x-min.jpg 1x,
+                ./img/buy2-mobile@2x-min.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./img/buy2-tablet@1x-min.jpg 1x,
+                ./img/buy2-tablet@2x-min.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./img/buy2-mobile@1x-min.jpg" alt="first buy" />
+          </picture>
+          <button type="button" class="gramm">200 g</button>
+        </div>
+      </li>
+      <li>
+        <div class="bynow-item-wrap">
+          <picture>
+            <source
+              srcset="
+                ./img/buy3-desktop@1x-min.jpg 1x,
+                ./img/buy3-desktop@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./img/buy3-mobile@1x-min.jpg 1x,
+                ./img/buy3-mobile@2x-min.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./img/buy3-tablet@1x-min.jpg 1x,
+                ./img/buy3-tablet@2x-min.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./img/buy3-mobile@1x-min.jpg" alt="first buy" />
+          </picture>
+          <button type="button" class="gramm">300 g</button>
+        </div>
+      </li>
+    </ul>
+    <form class="bynow-form">
+      <label for="user-name" class="bynow-input-label"
+        >Personal information</label
+      >
+      <div class="personal-wrap">
+        <input
+          type="text"
+          class="bynow-input input name"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          class="bynow-input input"
+          name="user-surname"
+          id="user-surname"
+          placeholder="Surname"
+        />
+      </div>
+      <label for="user-email" class="bynow-input-label">Email</label>
+      <input
+        type="email"
+        class="bynow-input input"
+        name="user-email"
+        id="user-email"
+        placeholder="Email"
+      />
+      <label for="user-tel" class="bynow-input-label">Phone number</label>
+      <div class="input-card-wrap">
+        <input
+          type="tel"
+          class="bynow-input input tel"
+          name="user-tel"
+          id="user-tel"
+          placeholder="Phone number"
+        />
+        <div class="number-post">
+          <svg class="prapor">
+            <use href="./images/icons.svg#prapor"></use>
+          </svg>
+          <p class="number-pre">+380</p>
+        </div>
+      </div>
+      <label for="user-card" class="bynow-input-label">Card number</label>
+      <div class="input-card-wrap">
+        <input
+          type="tel"
+          class="bynow-input input"
+          name="user-card"
+          id="user-card"
+          placeholder="Enter card"
+        />
+        <svg class="mastercard">
+          <use href="./images/icons.svg#mastercard"></use>
+        </svg>
+      </div>
+      <label for="user-coment" class="bynow-input-label">Comment</label>
+      <textarea
+        placeholder="Enter text"
+        name="user-coment"
+        id="user-coment"
+        class="bynow-textarea input"
+      ></textarea>
+      <button type="button" class="submit-buynow">Submit</button>
+    </form>
+  </div>
+</div>
