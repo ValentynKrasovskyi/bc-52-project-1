@@ -56,6 +56,8 @@
 
 .card-price {
   display: block;
+  text-align: center;
+  justify-content: center;
   width: fit-content;
   padding: 8px 20px;
   font-weight: 600;
@@ -66,11 +68,9 @@
   border-radius: 100px;
 }
 
-
 .swiper-pagination-lock {
   display: block;
 }
-
 
 .swiper {
   width: 100%;
@@ -83,7 +83,6 @@
   position: static;
 }
 
-
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -94,7 +93,7 @@
 
 .swiper-pagination-bullet-active {
   width: 28px;
-  background: #FD9222;
+  background: #fd9222;
 }
 
 @media screen and (min-width: 375px) {
@@ -129,8 +128,6 @@
     display: block;
   }
 
-
-
   /* .slider {
     max-width: 768px;
   } */
@@ -147,6 +144,4 @@
   .section-title-conteiner {
     max-width: none;
   }
-
 }
-

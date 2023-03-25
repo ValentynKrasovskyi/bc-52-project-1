@@ -44,15 +44,15 @@
   margin-right: auto;
   display: block;
 
-  padding: 14px 40px;
-  width: 222px;
-  height: 50px;
+  padding: 12px 28px;
+  width: 165px;
+  height: 41px;
   border: 1px solid #fd9222;
   border-radius: 100px;
 
   font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.21;
   color: var(--color-black);
 }
 .reviews-button:is(:hover, :focus) {
@@ -90,6 +90,19 @@
 
   .reviews {
     padding-bottom: 100;
+  }
+  .reviews-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 

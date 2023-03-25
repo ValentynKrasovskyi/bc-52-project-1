@@ -1,7 +1,8 @@
 .advantages-section {
-  background-color: var(--color-dark-violet);
+  /* background-color: var(--color-dark-violet); */
 }
 .advantages-container {
+  background-color: var(--color-dark-violet);
   width: 100%;
   margin-left: auto;
   margin-right: auto;

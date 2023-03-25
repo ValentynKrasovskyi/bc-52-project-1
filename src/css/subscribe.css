@@ -37,7 +37,7 @@
   margin-right: auto;
 }
 .subscribe-text {
-  width: 326px;
+  max-width: 326px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -81,7 +81,7 @@
     max-width: 378px;
   }
   .subscribe-text {
-    width: 467px;
+    max-width: 467px;
   }
 
   .subscribe-btn.btn-text-light {
