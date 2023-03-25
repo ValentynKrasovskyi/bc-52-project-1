@@ -104,6 +104,7 @@ input {
 .textarea textarea {
   padding: 14px 18px;
   resize: none;
+  color: #000000;
 }
 .review-modal-from-data input {
   padding-left: 18px;
@@ -218,6 +219,7 @@ input {
   .textarea textarea {
     padding-left: 24px;
     padding-top: 22px;
+    color: #000000;
   }
   .comment {
     height: 137px;
