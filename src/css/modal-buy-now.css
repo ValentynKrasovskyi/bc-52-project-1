@@ -91,10 +91,17 @@
   margin-bottom: 18px;
   padding-left: 18px;
   transition: border var(--transition);
+  outline: none;
 }
 .bynow-input.input:hover,
 .bynow-input.input:focus {
   border: 2px solid var(--color-orange);
+}
+.bynow-input.input:not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.bynow-input.input:not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.1);
 }
 .bynow-input::placeholder {
   font-weight: 400;
@@ -124,6 +131,11 @@
   resize: none;
   margin-bottom: 18px;
   padding-top: 14px;
+  outline: none;
+}
+.bynow-textarea.input:focus,
+.bynow-textarea.input:hover {
+  border: 2px solid var(--color-orange);
 }
 .bynow-textarea::placeholder {
   font-weight: 400;
@@ -143,6 +155,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
+  transition: var(--transition);
 }
 .input-card-wrap {
   position: relative;
@@ -271,4 +284,9 @@
 }
 /*! ----------------------DESKTOP---------------------- */
 @media screen and (min-width: 1200px) {
+  .submit-buynow:hover,
+  .submit-buynow:focus {
+    background-color: var(--color-orange-light);
+    color: var(--color-orange);
+  }
 }

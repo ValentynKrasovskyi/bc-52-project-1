@@ -108,6 +108,8 @@
           name="user-name"
           id="user-name"
           placeholder="Name"
+          pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}"
+          required
         />
         <input
           type="text"
@@ -133,6 +135,8 @@
           name="user-tel"
           id="user-tel"
           placeholder="Phone number"
+          pattern="\d{9}"
+          required
         />
         <div class="number-post">
           <svg class="prapor">
@@ -149,6 +153,8 @@
           name="user-card"
           id="user-card"
           placeholder="Enter card"
+          pattern="[\d ]{16,19}"
+          required
         />
         <svg class="mastercard">
           <use href="./images/icons.svg#mastercard"></use>
