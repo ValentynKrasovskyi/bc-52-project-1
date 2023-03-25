@@ -46,7 +46,7 @@
 }
 .thank-close-btn:focus,
 .thank-close-btn:hover {
-  background-color: var(--color-black);
+  background-color: #f16529;
 }
 
 .thank-icon-close {
@@ -57,7 +57,7 @@
 }
 .thank-close-btn:focus .thank-icon-close,
 .thank-close-btn:hover .thank-icon-close {
-  stroke: var(--color-white);
+  stroke: var(--color-orange-light);
 }
 .thank-block {
   padding: 84px 24px 170px 68px;
