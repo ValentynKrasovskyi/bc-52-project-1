@@ -26,7 +26,7 @@
   margin-bottom: 32px;
 }
 .hero-item-btn:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 14px;
 }
 .hero-btn-buy {
   background: var(--color-orange);

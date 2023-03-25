@@ -24,8 +24,6 @@
   align-items: center;
   margin-bottom: 22px;
 }
-.advantages-icon {
-}
 .advantages-subtitle {
   color: var(--color-white);
   margin-bottom: 18px;
@@ -42,6 +40,12 @@
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
+  }
+  .top-text {
+    padding-bottom: 9px;
+  }
+  .advantages-item {
+    max-width: 308px;
   }
 }
 @media screen and (min-width: 768px) {
