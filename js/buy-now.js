@@ -1,11 +1,16 @@
-const refs = {
-    openMenuBtn: document.querySelector('[data-buy-open]'),
-    closeMenuBtn: document.querySelector('[data-buy-close]'),
-    menu: document.querySelector('[data-buy]'),
+(() => {
+  const refs = {
+    openBuynowBtn: document.querySelectorAll("[data-buynow-open]"),
+    closeBuynowBtn: document.querySelector("[data-buynow-close]"),
+    menu: document.querySelector("[data-buynow]"),
   };
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
+
+  refs.openBuynowBtn.forEach(btn => {btn.addEventListener("click", togglemenu); })
+    
+  refs.closeBuynowBtn.addEventListener("click", togglemenu);
+
+  function togglemenu() {
+    refs.menu.classList.toggle("is-hidden");
     document.body.classList.toggle('no-scroll');
   }
+})();
