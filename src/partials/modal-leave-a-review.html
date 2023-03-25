@@ -1,0 +1,61 @@
+<div class="backdrop is-hidden" data-review>
+  <div class="review-modal">
+    <button type="button" class="review-modal-close-btn" data-review-close>
+      <svg class="modal-button-close">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="review-txt-black">leave a review about <span class="review-txt-orange">our chocolate</span></p>
+    <form class="form" name="user-name">
+      <ul class="review-modal-data">
+        <li class="review-modal-from-data">
+          <input
+            type="text"
+            name="name"
+            class="placeholder-modal review-input"
+            id="name"
+            placeholder="Name"
+          
+          />
+        </li>
+        <li class="review-modal-from-data">
+          <input
+            type="email"
+            name="email"
+            class="placeholder-modal review-input"
+            id="mail"
+            placeholder="Enter your email"
+          />
+        </li>
+        <li class="review-modal-from-data-tel">
+          <div class="svg">
+            <input
+              type="tel"
+              name="phone"
+              class="placeholder-modal review-input"
+              id="tel"
+              placeholder="Phone number"
+            />
+            <div class="flag-border">
+              <svg class="flag">
+                <use href="./images/icons.svg#prapor"></use>
+              </svg>
+              <p class="ua-tel-code">+380</p>
+            </div>
+          </div>
+        </li>
+        <li class="review-modal-from-data textarea">
+          <textarea
+            name="comment"
+            class="comment placeholder-modal review-input"
+            id="comment"
+            placeholder="Enter text"
+          ></textarea>
+        </li>
+      </ul>
+      <div class="send-button-container">
+        <button type="submit" class="send-button btn-text-light">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
