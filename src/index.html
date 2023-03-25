@@ -38,12 +38,19 @@ const swiper = new Swiper('.swiper', {
   initialSlide: 0,
   slidesPerView: 1,
   loop: true,
+  pagination : {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  }, 
+  
   autoplay: {
    delay: 3000,
  },
   breakpoints: {
     375: {
       slidesPerView: 1,
+      spaceBetween: 18,
     },
     
     768: {
@@ -55,13 +62,8 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 18
     },
   },
- 
-  pagination : {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
 
+    
 });
     </script>
     <script type="module" src="/main.js"></script>
