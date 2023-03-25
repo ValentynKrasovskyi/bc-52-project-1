@@ -14,6 +14,7 @@
   width: 311px;
   height: 350px;
   transform: translate(-50%, -50%);
+  background-image: url(../img/pop-up-half-choc-destop@1x-min.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
   transition: transform var(--transition);
