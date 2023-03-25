@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -30,6 +31,35 @@
     <load ="partials/modal-thank-you.html" />
     <load ="partials/modal-feedback.html" />
     <load ="partials/modal-explore-new-chocolate.html" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  initialSlide: 0,
+  slidesPerView: 1,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18
+    },
+  },
+ 
+  pagination : {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+
+});
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
