@@ -56,4 +56,31 @@ var swiper1 = new Swiper('.swiper1', {
       },
     },   
   });
+  var swiper3 = new Swiper('.swiper3', {
+    speed: 400,
+    initialSlide: 0,
+    slidesPerView: 1,
+    loop: true,
+    pagination : {
+      el: '.swiper-pagination3',
+      type: 'bullets',
+      clickable: true,
+    }, 
+    
+    autoplay: {
+     delay: 3000,
+   },
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+      },
+      
+        768: {
+          loop: false,
+          slidesPerView: 3,
+        },
+      
+
+    },   
+  });
   
