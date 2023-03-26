@@ -83,6 +83,19 @@
   outline: none;
 }
 
+.modal-explore-input:focus,
+.modal-explore-input:hover {
+  border: 2px solid var(--color-orange);
+}
+
+.modal-explore-input:not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.modal-explore-input:not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
 .modal-explore-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
