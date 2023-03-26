@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   overflow: auto;
+  z-index: 100;
   transition: opacity var(--transition), visibility var(--transition);
 }
 .backdrop-buy-now.is-hidden .modal-buy-now {

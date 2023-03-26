@@ -8,19 +8,23 @@ const reviewOpenBtn = document.querySelector('[data-review-open]');
 
 reviewOpenBtn.addEventListener('click', () => {
   reviewBackdrop.classList.remove('is-hidden');
+  document.body.classList.add('no-scroll');
 });
 
 reviewCloseBtn.addEventListener('click', () => {
   reviewBackdrop.classList.add('is-hidden');
+  document.body.classList.remove('no-scroll');
 });
 
 submitReviewBtn.addEventListener('click', function () {
   reviewBackdrop.classList.add('is-hidden');
   feedbackBackdrop.classList.remove('is-hidden');
+  document.body.classList.add('no-scroll');
 });
 
 feedbackCloseBtn.addEventListener('click', function () {
   feedbackBackdrop.classList.add('is-hidden');
+  document.body.classList.remove('no-scroll');
   reviewForm.submit();
 });
 

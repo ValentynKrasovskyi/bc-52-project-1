@@ -9,23 +9,29 @@ const dataBuyOpen = document.querySelector('[data-buy-open]');
 
 buynowOpenBtn.addEventListener('click', () => {
   buynowBackdrop.classList.remove('is-hidden');
+  document.body.classList.add('no-scroll');
 });
 
 dataBuyOpen.addEventListener('click', () => {
   buynowBackdrop.classList.remove('is-hidden');
+  document.body.classList.add('no-scroll');
+  
 });
 
 buynowCloseBtn.addEventListener('click', () => {
   buynowBackdrop.classList.add('is-hidden');
+  document.body.classList.remove('no-scroll');
 });
 
 submitBuynowBtn.addEventListener('click', function () {
   buynowBackdrop.classList.add('is-hidden');
   thankBackdrop.classList.remove('is-hidden');
+  document.body.classList.add('no-scroll');
 });
 
 thankCloseBtn.addEventListener('click', function () {
   thankBackdrop.classList.add('is-hidden');
+  document.body.classList.remove('no-scroll');
   buynowForm.submit();
 });
 
