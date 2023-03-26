@@ -36,6 +36,16 @@ function playVideo() {
   video.classList.remove('is-hidden');
   video.src += '?autoplay=1';
 
+  const screenWidth = window.innerWidth;
+if (screenWidth >= 768 && screenWidth <= 1200) {
+  video.style.maxHeight = '400px';
+} else {
+  video.style.maxHeight = 'none';
+}
+
+
+
+
   video.addEventListener('ended', function() {
     Object.assign(videoCover.style, coverStyles);
     Object.assign(playIcon.style, iconStyles);
