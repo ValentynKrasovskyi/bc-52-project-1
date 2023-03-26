@@ -3,14 +3,12 @@
         display: none;
         visibility: hidden;
     }
-  
-    .header {
-        padding: 20px 0px 14px 0px;
-      }
+
 
     .header .container {
         display: flex;
         align-items: center;
+        align-content: center;
         justify-content: space-between;
     }   
     
@@ -24,6 +22,7 @@
         letter-spacing: -0.03em;
         color: var(--color-black);
         cursor: pointer;
+        padding: 25px 0 19px 0;
     }
     
     
@@ -209,6 +208,10 @@
             height: 32px;
         }
 
+        .logo {
+            padding: 31px 0;
+        }
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -223,8 +226,14 @@
         }
 
         .header {
+            padding: 0;
+        }
+
+        .nav-item .nav-link {
+            display: block;
             padding: 28px 0px 36px 0px;
         }
+
 
         .nav-link {
             color: var(--color-black);
@@ -235,6 +244,7 @@
         }
 
         .nav {
+            
             align-items: center;
             justify-content: center;
             gap: 24px;
@@ -257,7 +267,27 @@
         .logo {
             font-size: 18px;
             line-height: 1.11;
+            padding: 26px 0px 34px 0px;
         }
+
+        .social {
+            display: block;
+            padding-top : auto;
+            padding-bottom: auto;
+        }
+
+        .social-icons {
+            width: 24px;
+            height: 24px;
+            
+            
+        }
+
+        .social .insta-icon {
+        margin-right: 18px;
+        }
+
+       
 
 
     }
