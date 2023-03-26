@@ -23,7 +23,7 @@ input {
   letter-spacing: -0.03em;
   padding-left: 24px;
   padding-right: 32px;
-  color: #111111;
+  color: var(--color-black);
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -34,13 +34,13 @@ input {
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fd9222;
+  color: var(--color-orange);
 }
 
 .review-modal {
   width: 311px;
   min-height: 471px;
-  background: #fafafa;
+  background: var(--main-background-color);
   top: 50%;
   left: 50%;
   position: absolute;
@@ -62,7 +62,7 @@ input {
 .modal-button-close {
   width: 24px;
   height: 24px;
-  stroke: #111111;
+  stroke: var(--color-black);
   display: block;
 }
 
@@ -107,9 +107,16 @@ input {
 .send-button {
   border: none;
 
-  background: #fd9222;
+  background: var(--color-orange);
   border-radius: 100px;
   margin-bottom: 32px;
+  transition: var(--transition);
+}
+
+.send-button:hover,
+.send-button:focus {
+  background: var(--color-orange-light);
+  color: var(--color-orange);
 }
 
 .textarea textarea {
@@ -119,7 +126,7 @@ input {
 }
 .review-modal-from-data input {
   padding-left: 18px;
-  color: #111111;
+  color: var(--color-black);
 }
 .review-modal-from-data-tel input {
   padding-left: 106px;
@@ -179,7 +186,7 @@ input {
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--color-black);
     padding-left: 40px;
     padding-right: 179px;
     margin-bottom: 40px;
@@ -192,7 +199,7 @@ input {
     letter-spacing: -0.03em;
     text-transform: uppercase;
 
-    color: #fd9222;
+    color: var(--color-orange);
   }
   .review-modal-from-data {
     margin-bottom: 19px;
