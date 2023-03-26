@@ -88,6 +88,9 @@
   --color-orange-light: #fcf1e0; /* Buttons(+Hover/Focus/) Text */
   --color-white: #ffffff;
   --color-white-70: #ffffffb2; /* Text */
+  /* how its made markers */
+  --marker-background: #4c4c4c;
+  --marker-border: #eceded;
   --cross-gradiend: linear-gradient(
     to bottom,
     #f16529 0%,
@@ -101,7 +104,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--color-black);
-  background-color: (var(--main-background-color));
+  background-color: var(--main-background-color);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;

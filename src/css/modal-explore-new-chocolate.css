@@ -77,9 +77,6 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
   padding-left: 18px;
-}
-
-.modal-explore-input:focus {
   outline: none;
 }
 
@@ -87,6 +84,7 @@
 .modal-explore-input:hover {
   border: 2px solid var(--color-orange);
 }
+
 
 .modal-explore-input:not(:placeholder-shown):invalid {
   background-color: rgba(255, 0, 0, 0.1);
@@ -96,12 +94,13 @@
   background-color: rgba(0, 255, 0, 0.1);
 }
 
+
 .modal-explore-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-explore-btn {
-  padding: 14px 24px;
+  padding: 14px 22px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;

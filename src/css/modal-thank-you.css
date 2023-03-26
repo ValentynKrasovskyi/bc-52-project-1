@@ -21,11 +21,12 @@
   transform: translate(-50%, -50%);
   width: 311px;
   height: 350px;
-  background: #fd9222;
+  background: var(--color-orange);
   border-radius: 15px;
   background-image: url(../img/pop-up-half-choc-mobile@1x-min.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
+  transform: opacity(100%);
   transition: transform var(--transition);
 }
 .thank-close-btn {
@@ -39,32 +40,27 @@
   height: 28px;
   border-radius: 50%;
   border: none;
-  background: #fcf1e0;
+  background: var(--color-orange-light);
   padding: 0;
   transition: background-color var(--transition);
 }
 .thank-close-btn:focus,
 .thank-close-btn:hover {
-  background-color: #111111;
+  background-color: #f16529;
 }
+
 .thank-icon-close {
-  stroke: rgba(241, 101, 41, 1);
+  stroke: url(#linear-gradient);
   width: 16px;
   height: 16px;
   transition: stroke var(--transition);
 }
 .thank-close-btn:focus .thank-icon-close,
 .thank-close-btn:hover .thank-icon-close {
-  stroke: var(--color-white);
+  stroke: var(--color-orange-light);
 }
 .thank-block {
   padding: 84px 24px 170px 68px;
-}
-.thank-img {
-  position: absolute;
-  bottom: -50%;
-  left: 0;
-  transform: translate(0, 0);
 }
 .thank-title {
   margin-bottom: 8px;

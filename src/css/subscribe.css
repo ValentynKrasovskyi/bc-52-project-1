@@ -1,3 +1,6 @@
+.section.subscribe-section {
+  padding-top: 0;
+}
 .container.subscribe-container {
   background-image: linear-gradient(
       0deg,
@@ -34,7 +37,7 @@
   margin-right: auto;
 }
 .subscribe-text {
-  width: 326px;
+  max-width: 326px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -50,6 +53,9 @@
 }
 /*! ----------------------TABLET---------------------- */
 @media screen and (min-width: 768px) {
+  .section.subscribe-section {
+    padding-top: 0;
+  }
   .container.subscribe-container {
     padding-top: 72px;
     background-image: linear-gradient(
@@ -75,7 +81,7 @@
     max-width: 378px;
   }
   .subscribe-text {
-    width: 467px;
+    max-width: 467px;
   }
 
   .subscribe-btn.btn-text-light {
@@ -89,6 +95,9 @@
 }
 /*! ----------------------DESKTOP---------------------- */
 @media screen and (min-width: 1200px) {
+  .section.subscribe-section {
+    padding-top: 0;
+  }
   .container.subscribe-container {
     padding-top: 72px;
     background-image: linear-gradient(

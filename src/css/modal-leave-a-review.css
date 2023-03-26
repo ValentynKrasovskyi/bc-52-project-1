@@ -1,0 +1,246 @@
+input {
+  padding: 0;
+}
+
+.form {
+  padding: 0 24px;
+}
+
+.backdrop {
+  background: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.review-txt-black {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  padding-left: 24px;
+  padding-right: 32px;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.review-txt-orange {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fd9222;
+}
+
+.review-modal {
+  width: 311px;
+  min-height: 471px;
+  background: #fafafa;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.review-modal-close-btn {
+  border: none;
+  background: transparent;
+  margin-left: auto;
+  margin-left: auto;
+  display: flex;
+  margin-top: 14px;
+  margin-right: 14px;
+  padding: 0;
+}
+
+.modal-button-close {
+  width: 24px;
+  height: 24px;
+  stroke: #111111;
+  display: block;
+}
+
+.review-input {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  outline: none;
+}
+.review-input:is(:hover :focus) {
+  border: 2px solid var(--color-orange);
+}
+.review-input:not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.review-input:not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.review-input input {
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  color: rgba(64, 64, 64, 0.3);
+}
+.comment {
+  height: 91px;
+}
+
+.review-modal-from-data {
+  margin-bottom: 14px;
+}
+
+.review-modal-from-data-tel {
+  margin-bottom: 14px;
+}
+
+.send-button {
+  border: none;
+
+  background: #fd9222;
+  border-radius: 100px;
+  margin-bottom: 32px;
+}
+
+.textarea textarea {
+  padding: 14px 18px;
+  resize: none;
+  color: #000000;
+}
+.review-modal-from-data input {
+  padding-left: 18px;
+  color: #111111;
+}
+.review-modal-from-data-tel input {
+  padding-left: 106px;
+  color: #111111;
+}
+
+::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.svg {
+  position: relative;
+}
+
+.flag-border {
+  display: flex;
+  width: 74px;
+  gap: 8px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  border-right: 1px solid var(--color-placeholder);
+}
+
+.flag {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.ua-tel-code {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding: 4px 8px 4px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 0 40px;
+  }
+  .review-modal-close-btn {
+    margin-top: 24px;
+    margin-right: 24px;
+  }
+  .review-modal {
+    width: 517px;
+    height: 631px;
+  }
+  .review-txt-black {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    padding-left: 40px;
+    padding-right: 179px;
+    margin-bottom: 40px;
+  }
+  .review-txt-orange {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: #fd9222;
+  }
+  .review-modal-from-data {
+    margin-bottom: 19px;
+  }
+  .review-modal-from-data-tel {
+    margin-bottom: 19px;
+  }
+  .modal-button-close {
+    width: 28px;
+    height: 28px;
+  }
+  .review-input {
+    height: 66px;
+  }
+  .flag-border {
+    width: 125px;
+    gap: 18px;
+    top: 17px;
+    left: 24px;
+  }
+  .flag {
+    width: 32px;
+    height: 32px;
+  }
+  .ua-tel-code {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding: 5px 32px 5px 0;
+  }
+  .review-modal-from-data-tel input {
+    padding-left: 177px;
+  }
+  .review-modal-from-data input {
+    padding-left: 24px;
+  }
+  .textarea textarea {
+    padding-left: 24px;
+    padding-top: 22px;
+    color: #000000;
+  }
+  .comment {
+    height: 137px;
+  }
+  .send-button {
+    margin-bottom: 40px;
+  }
+}
