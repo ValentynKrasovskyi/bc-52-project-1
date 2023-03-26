@@ -27,7 +27,6 @@
   background-image: url(../img/how-made-mobile@1x-min.jpg);
   background-size: cover;
   top: 0;
-  /* width: 335px; */
   height: 500px;
   z-index: 5;
   border-radius: 15px;
@@ -35,7 +34,6 @@
   width: 100%;
   left: 50%;
   margin-left: -160px;
-
   transition: opacity 0.5s ease-in-out;
 }
 
