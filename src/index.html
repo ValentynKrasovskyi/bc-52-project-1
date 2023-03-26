@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simply Chocholate</title>
+    <title>Simply Chocolate</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,19 +12,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load ="partials/header.html" />
-    <load ="partials/hero.html" />
-    <load ="partials/advantages.html" />
-    <load ="partials/unique-components.html" />
-    <load ="partials/how-its-made.html" />
-    <load ="partials/our-products.html" />
-    <load ="partials/top-sellers.html" />
-    <load ="partials/reviews.html" />
-    <load ="partials/subscribe.html" />
+    <main>
+      <load ="partials/hero.html" />
+      <load ="partials/advantages.html" />
+      <load ="partials/unique-components.html" />
+      <load ="partials/how-its-made.html" />
+      <load ="partials/our-products.html" />
+      <load ="partials/top-sellers.html" />
+      <load ="partials/reviews.html" />
+      <load ="partials/subscribe.html" />
+    </main>
     <load ="partials/footer.html" />
     <load ="partials/modal-buy-now.html" />
     <load ="partials/modal-leave-a-review.html" />
@@ -33,65 +38,64 @@
     <load ="partials/modal-explore-new-chocolate.html" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-var swiper1 = new Swiper('.swiper1', {
-  speed: 400,
-  initialSlide: 0,
-  slidesPerView: 1,
-  loop: true,
-  pagination : {
-    el: '.swiper-pagination1',
-    type: 'bullets',
-    clickable: true,
-  }, 
-  
-  autoplay: {
-   delay: 3000,
- },
-  breakpoints: {
-    375: {
-      slidesPerView: 1,
-    },
-    
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 18
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 18
-    },
-  },   
-});
-var swiper2 = new Swiper('.swiper2', {
-  speed: 400,
-  initialSlide: 0,
-  slidesPerView: 1,
-  loop: true,
-  pagination : {
-    el: '.swiper-pagination2',
-    type: 'bullets',
-    clickable: true,
-  }, 
-  
-  autoplay: {
-   delay: 3000,
- },
-  breakpoints: {
-    375: {
-      slidesPerView: 1,
-    },
-    
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 16
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 28,
-    },
-  },   
-});
+      var swiper1 = new Swiper('.swiper1', {
+        speed: 400,
+        initialSlide: 0,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination1',
+          type: 'bullets',
+          clickable: true,
+        },
 
+        autoplay: {
+          delay: 3000,
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 18,
+          },
+        },
+      });
+      var swiper2 = new Swiper('.swiper2', {
+        speed: 400,
+        initialSlide: 0,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination2',
+          type: 'bullets',
+          clickable: true,
+        },
+
+        autoplay: {
+          delay: 3000,
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 28,
+          },
+        },
+      });
     </script>
     <script type="module" src="/main.js"></script>
   </body>
