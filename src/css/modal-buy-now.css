@@ -45,8 +45,8 @@
   margin-bottom: 32px;
 }
 .bynow-list {
+  align-items: center;
   display: flex;
-  justify-content: center;
 }
 
 .bynow-item-wrap {
@@ -55,15 +55,14 @@
   background-color: var(--color-white);
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  display: none;
-  margin-bottom: 32px;
-}
-.bynow-item-wrap.primary {
   display: flex;
   flex-direction: column;
   padding: 32px 32px 28px 32px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .gramm {
   width: 96px;
   height: 33px;
@@ -76,6 +75,36 @@
   line-height: 1.21;
   color: var(--color-black);
 }
+
+.swiper-pagination-lock {
+  display: block;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.swiper-pagination3 {
+  margin-top: 14px;
+  margin-bottom: 32px;
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background: rgba(17, 17, 17, 0.1);
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  background: #fd9222;
+}
+
 .bynow-form {
   display: flex;
   flex-direction: column;
@@ -202,20 +231,23 @@
     min-height: 1058px;
     padding: 24px;
   }
-  .bynow-list {
-    gap: 16px;
+
+  .bynow-list.swiper-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .buy-now-item.swiper-slide {
+    width: calc((100% - 32px) / 3);
   }
   .buy-now-close {
     width: 28px;
     height: 28px;
   }
   .bynow-item-wrap {
+    display: flex;
     width: 160px;
     height: 196px;
-    display: flex;
-    flex-direction: column;
-    padding: 32px 32px 28px 32px;
-    align-items: center;
+    padding: 20px 24px 18px 20px;
   }
   .bynow-form {
     padding-left: 24px;
@@ -236,6 +268,7 @@
     font-size: 14px;
     line-height: 1.29;
   }
+
   .bynow-textarea.input {
     width: 513px;
     height: 137px;
@@ -282,7 +315,11 @@
     height: 32px;
     box-shadow: 1.5px 0px 0px -1px rgba(0, 0, 0, 0.1);
   }
+  .swiper-pagination3 {
+    display: none;
+  }
 }
+
 /*! ----------------------DESKTOP---------------------- */
 @media screen and (min-width: 1200px) {
   .submit-buynow:hover,
