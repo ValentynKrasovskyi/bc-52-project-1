@@ -32,14 +32,13 @@
   z-index: 5;
   border-radius: 15px;
   cursor: pointer;
-
-  transition: opacity 0.5s ease-in-out;
-}
-.video-cover {
   width: 100%;
   left: 50%;
   margin-left: -160px;
+
+  transition: opacity 0.5s ease-in-out;
 }
+
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
