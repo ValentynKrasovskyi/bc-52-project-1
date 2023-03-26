@@ -66,6 +66,40 @@ const swiper = new Swiper('.swiper', {
     
 });
     </script>
+<script>
+const ReviewsSwiper = new Swiper('.review-swiper', {
+  speed: 400,
+  initialSlide: 0,
+  slidesPerView: 1,
+  loop: true,
+  pagination : {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  }, 
+  
+  autoplay: {
+   delay: 3000,
+ },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 18,
+    },
+    
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18
+    },
+  },
+
+    
+});
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
