@@ -89,6 +89,7 @@
   border-radius: 13px;
   background: rgba(17, 17, 17, 0.1);
   cursor: pointer;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
