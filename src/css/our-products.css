@@ -1,10 +1,10 @@
 .section-conteiner {
   min-width: 100%;
   overflow: hidden;
+  padding-top: 72px;
 }
 
 .product-container {
-  padding-top: 72px;
   max-width: 335px;
   display: flex;
   flex-direction: column;
@@ -114,10 +114,12 @@
   .container {
     width: fit-content;
   }
+  .section-conteiner {
+    padding-top: 100px;
+  }
 
   .product-container {
     max-width: fit-content;
-    padding-top: 100px;
   }
 
   .section-title-conteiner {
@@ -145,10 +147,9 @@
   .section-title {
     margin-bottom: 50px;
   }
-  .product-container {
+  .section-conteiner {
     padding-top: 128px;
   }
-
   .section-title-conteiner {
     max-width: none;
   }
