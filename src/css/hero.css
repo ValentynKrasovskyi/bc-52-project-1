@@ -26,7 +26,7 @@
   margin-bottom: 32px;
 }
 .hero-item-btn:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 14px;
 }
 .hero-btn-buy {
   background: var(--color-orange);
@@ -45,6 +45,7 @@
   border: 1px solid var(--color-white);
   border-radius: 100px;
   transition: color var(--transition), border var(--transition);
+  text-align: center;
 }
 .hero-btn-how:hover,
 .hero-btn-how:focus {
@@ -96,7 +97,6 @@
   .hero-container {
     background-image: url(../img/hero-mobile@1x-min.jpg);
     max-width: 335px;
-    height: 100%;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -104,8 +104,6 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero-container {
     background-image: url(../img/hero-mobile@2x-min.jpg);
-    max-width: 335px;
-    height: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -116,7 +114,6 @@
     flex-wrap: nowrap;
     background-image: url(../img/hero-tablet@1x-min.jpg);
     max-width: 704px;
-    height: 100%;
     padding: 671px 40px 40px;
   }
   .hero-title {
@@ -153,15 +150,12 @@
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-container {
     background-image: url(../img/hero-tablet@2x-min.jpg);
-    max-width: 704px;
-    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
     background-image: url(../img/hero-desktop@1x-min.jpg);
     max-width: 1136px;
-    height: 100%;
     padding-top: 381px;
   }
 }
@@ -170,7 +164,5 @@
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero-container {
     background-image: url(../img/hero-desktop@2x-min.jpg);
-    max-width: 1136px;
-    height: 100%;
   }
 }
