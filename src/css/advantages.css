@@ -69,7 +69,6 @@
   .advantages-container {
     width: 1200px;
     display: flex;
-    padding: 50px;
   }
   .advantages-list {
     display: flex;
