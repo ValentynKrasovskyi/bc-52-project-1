@@ -1,19 +1,11 @@
-
-
-.reviews {
-  padding-bottom: 72px;
-}
-
 .reviews-title {
   margin-bottom: 32px;
   text-align: center;
 }
 
 .reviews-list {
-
   margin-bottom: 32px;
   padding-top: 40px;
-
 }
 .reviews-item {
   width: 100%;
@@ -57,7 +49,6 @@
   font-size: 14px;
   line-height: 1.21;
   color: var(--color-black);
-  
 }
 .reviews-button:is(:hover, :focus) {
   background: var(--color-orange);
@@ -90,12 +81,10 @@
   z-index: 99;
 }
 
-
 @media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
-
   .swiper-pagination2 {
     margin-bottom: 100px;
   }
@@ -106,7 +95,6 @@
   .reviews-list {
     display: flex;
     gap: 16px;
-
   }
   .reviews-item {
     width: calc((100%-16px) / 2);
@@ -115,9 +103,6 @@
     margin-bottom: 49px;
   }
 
-  .reviews {
-    padding-bottom: 100;
-  }
   .reviews-button {
     margin-left: auto;
     margin-right: auto;
@@ -136,12 +121,11 @@
     height: 50px;
     padding: 14px 40px;
     font-size: 18px;
-  line-height: 1.22;
+    line-height: 1.22;
   }
 }
 
 @media screen and (min-width: 1200px) {
-
   .swiper-pagination2 {
     margin-bottom: 50px;
   }
@@ -154,8 +138,5 @@
   }
   .reviews-item {
     width: calc((100%-56px) / 3);
-  }
-  .reviews {
-    padding-bottom: 128px;
   }
 }
